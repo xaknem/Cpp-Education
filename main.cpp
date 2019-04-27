@@ -4,7 +4,7 @@ int main()
 {
     using namespace std;
     cout << "lol kek soobshenie.";
-    cout << endl;
+    cout << endl << "line" << endl;
     cout << "novaya stroka";
     return 0;
 }
