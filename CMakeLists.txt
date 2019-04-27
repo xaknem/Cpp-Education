@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled main.cpp)
+add_executable(untitled main.cpp FirstAndSecond/new.cpp FirstAndSecond/number3.cpp FirstAndSecond/vozrast.cpp FirstAndSecond/temperature.cpp)
