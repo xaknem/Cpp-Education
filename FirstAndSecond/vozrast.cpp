@@ -6,7 +6,7 @@
 
 int yearsToMonths(int);
 
-int main() {
+int mahjhjhgjhg() {
     int years;
     std::cout << "Enter your age: ";
     std::cin >> years;
