@@ -40,18 +40,18 @@ int bmiIndex() {
 }
 
 // Geograpgic coordinates
-const int angularMinutesInDegree = 60;
-const int angularSecondsInAngularMinute = 60;
-int main() {
-    int latitudeInDegrees;
-    int latitudeInMinutes;
-    int latitudeInSeconds;
+const double angularMinutesInDegree = 60;
+const double angularSecondsInAngularMinute = 60;
+int latitude() {
+    double latitudeInDegrees;
+    double latitudeInMinutes;
+    double latitudeInSeconds;
 
     cout << "Put latitude in degrees, then in minutes, then in seconds: ";
     cin >> latitudeInDegrees;
     cin >> latitudeInMinutes;
     cin >> latitudeInSeconds;
-
-
+    double latitude = latitudeInDegrees + (latitudeInMinutes / angularMinutesInDegree) + latitudeInSeconds / (angularMinutesInDegree * angularSecondsInAngularMinute);
+    cout << " == " << latitude << " degrees;";
     return 0;
 }
