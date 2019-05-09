@@ -55,3 +55,22 @@ int latitude() {
     cout << " == " << latitude << " degrees;";
     return 0;
 }
+
+const int secsInDays = 86400;
+const int secsInHour = 3600;
+const int secsInMins = 60;
+int main() {
+    int seconds;
+    cout << "Enter the number of seconds : " ;
+    cin >> seconds;
+    int days;
+    int hours;
+    int minutes;
+    int variable;
+    days = seconds / secsInDays;
+    hours = seconds % secsInDays / secsInHour;
+    minutes = seconds % secsInDays % secsInHour / secsInMins;
+    seconds = seconds % secsInDays % secsInHour % secsInMins;
+    cout << endl << seconds << " seconds = " << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds.";
+    return 0;
+}
