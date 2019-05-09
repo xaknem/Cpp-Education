@@ -5,8 +5,8 @@
 using namespace std;
 
 const int inchesInFoot = 12;
-const double footsInMeters = 0.0254;
-const double foontsInKg = 2.2;
+const double metersInInches = 0.0254;
+const double poundsInKg = 2.2;
 
 
 int inchesToFoot() {
@@ -20,24 +20,25 @@ int inchesToFoot() {
     return 0;
 }
 
-
-const int zaloopa = 123;
-int main() {
-
+int bmiIndex() {
     double heightInFoots;
     int heightInInches;
-    int weight;
+    int weightInPounds;
     cout << "Put your height in foots : \n";
     cin >> heightInFoots;
     cout << "And inches : \n";
-    cin >>
+    cin >> heightInInches;
     cout << "Put your weight on foonts: \n";
-    cin >> weight;
+    cin >> weightInPounds;
     cout << "RUN" << endl;
+    int height = (heightInFoots * inchesInFoot + heightInInches) * metersInInches;
+    double weight = weightInPounds / poundsInKg;
+    double bmi = weight / (height * height);
+    cout << "BMI is : " << bmi << " ." << endl;
+    return 0;
+}
 
+int main() {
 
-
-
-    cout << "BMI is : " << ;
     return 0;
 }
