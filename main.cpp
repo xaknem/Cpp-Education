@@ -8,7 +8,7 @@ const int inchesInFoot = 12;
 const double metersInInches = 0.0254;
 const double poundsInKg = 2.2;
 
-
+// Calculates inches from foot
 int inchesToFoot() {
     int height;
     cout << "Vvedite rost v duimax: ";
@@ -20,6 +20,7 @@ int inchesToFoot() {
     return 0;
 }
 
+// Calculate BMI index using constants
 int bmiIndex() {
     double heightInFoots;
     int heightInInches;
@@ -38,7 +39,19 @@ int bmiIndex() {
     return 0;
 }
 
+// Geograpgic coordinates
+const int angularMinutesInDegree = 60;
+const int angularSecondsInAngularMinute = 60;
 int main() {
+    int latitudeInDegrees;
+    int latitudeInMinutes;
+    int latitudeInSeconds;
+
+    cout << "Put latitude in degrees, then in minutes, then in seconds: ";
+    cin >> latitudeInDegrees;
+    cin >> latitudeInMinutes;
+    cin >> latitudeInSeconds;
+
 
     return 0;
 }
