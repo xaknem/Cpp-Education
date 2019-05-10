@@ -98,3 +98,17 @@ int fuelConsumptionCalculatorUS() {
     cout << "The fuel consumption for 100 miles is " << consumption << " gallons.";
     return 0;
 }
+
+int main() {
+    int  kilometers;
+    double liters;
+    cout << "Enter the road length in kilometers: ";
+    cin >> kilometers;
+    cout << "Enter the amount fuel spent in liters: ";
+    cin  >> liters;
+    double miles = kilometers / 100.0 * 62.14;
+    double gallons = liters * 3.875;
+    double consumption = miles / gallons;
+    cout << "The fuel consumption is 1 gallon for" << consumption << " miles.";
+    return 0;
+}
