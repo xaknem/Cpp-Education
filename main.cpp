@@ -83,7 +83,18 @@ int populationCalc() {
     cout << "\nEnter the population of the US: ";
     cin  >> countryPopulation;
     double percent = double(countryPopulation) / worldsPopulation * 100.0;
-    cout << endl << "The population of the US is " << percent << "% of the worlds population.";
+    cout << "The population of the US is " << percent << "% of the worlds population.";
     return 0;
 }
 
+int fuelConsumptionCalculatorUS() {
+    int  miles;
+    double gallons;
+    cout << "Enter the road length in miles: ";
+    cin >> miles;
+    cout << "Enter the amount fuel spent in gallons: ";
+    cin  >> gallons;
+    int consumption = gallons / miles  * 100;
+    cout << "The fuel consumption for 100 miles is " << consumption << " gallons.";
+    return 0;
+}
