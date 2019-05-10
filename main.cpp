@@ -59,7 +59,7 @@ int latitude() {
 const int secsInDays = 86400;
 const int secsInHour = 3600;
 const int secsInMins = 60;
-int main() {
+int secondsToRealTime() {
     int seconds;
     cout << "Enter the number of seconds : " ;
     cin >> seconds;
@@ -74,3 +74,16 @@ int main() {
     cout << endl << seconds << " seconds = " << days << " days, " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds.";
     return 0;
 }
+
+int populationCalc() {
+    long long worldsPopulation;
+    long long countryPopulation;
+    cout << "Enter the worlds population: ";
+    cin >> worldsPopulation;
+    cout << "\nEnter the population of the US: ";
+    cin  >> countryPopulation;
+    double percent = double(countryPopulation) / worldsPopulation * 100.0;
+    cout << endl << "The population of the US is " << percent << "% of the worlds population.";
+    return 0;
+}
+
