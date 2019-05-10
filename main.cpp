@@ -99,7 +99,7 @@ int fuelConsumptionCalculatorUS() {
     return 0;
 }
 
-int main() {
+int europeanConsimptionToUs() {
     int  kilometers;
     double liters;
     cout << "Enter the road length in kilometers: ";
