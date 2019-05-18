@@ -112,3 +112,17 @@ int europeanConsimptionToUs() {
     cout << "The fuel consumption is 1 gallon for" << consumption << " miles.";
     return 0;
 }
+
+int main() {
+    using namespace std;
+    double* p3 = new double[3];
+    p3[0] = 0.2;
+    p3[1] = 0.5;
+    p3[2] = 0.8;
+
+    cout << "p3[1] is " << p3[1] << endl;
+    cout << p3 + 1;
+
+    short kek [20];
+    short (*pas) [20] = &kek;
+}
