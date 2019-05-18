@@ -148,17 +148,17 @@ int fourth1and2() {
 }
 
 void fourth3() {
-    int mass[5] = {1,3,5,7,9};
+    int mass[5] = {1, 3, 5, 7, 9};
 }
 
 void fourth4() {
-    int mass[5] = {1,3,5,7,9};
+    int mass[5] = {1, 3, 5, 7, 9};
     int even = mass[0] + mass[4];
     cout << even;
 }
 
 void fourth5() {
-    float ideas[2] = {1,2};
+    float ideas[2] = {1, 2};
     cout << ideas[1];
 }
 
@@ -167,13 +167,15 @@ void fourth6and7() {
     string newstring = "Waldorf Salad";
 }
 
-struct fish{
+struct fish {
     string kindof;
     int ounce;
     float length;
 };
 
-enum Responce2 {No, Yes ,Maybe};
+enum Responce2 {
+    No, Yes, Maybe
+};
 
 void fourth9() {
     fish largest = {
@@ -187,18 +189,18 @@ void fourth9() {
 void fourth11() {
     double ted = 2.4;
 
-    double* pt = &ted;
+    double *pt = &ted;
 
     cout << *pt;
 }
 
 void fourth12() {
     float treacle[10];
-    float* pt = treacle;
+    float *pt = treacle;
     cout << "first element " << pt[0] << endl;
     cout << "last element " << pt[9];
     //or as the same
-    cout << *pt << " " << *(pt+9) << endl;
+    cout << *pt << " " << *(pt + 9) << endl;
 }
 
 void fourth13() {
