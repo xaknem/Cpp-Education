@@ -2,6 +2,7 @@
   <dictionary name="asm">
     <words>
       <w>commutate</w>
+      <w>newstring</w>
     </words>
   </dictionary>
 </component>
