@@ -265,7 +265,7 @@ void desertExercise() {
     cout << " for you, " << name << ".\n";
 }
 
-int naming() {
+int namingCharArray() {
     char *firstName1;
     char *lastName1;
 
@@ -281,7 +281,7 @@ int naming() {
     return 0;
 }
 
-int main() {
+int namingStrings() {
     string firstName1;
     string lastName1;
 
@@ -293,3 +293,18 @@ int main() {
     return 0;
 }
 
+
+
+int main() {
+    struct CandyBar {
+        string name;
+        float weight;
+        int callories;
+    } snack {
+        "Mocha Munch",
+        2.3,
+        350
+    };
+    cout << snack.name << " has " << snack.callories << " callories, and weight " << snack.weight << endl;
+    return 0;
+}
