@@ -208,8 +208,26 @@ void fourth13() {
     int size;
     cout << "Insert size ";
     cin >> size;
-    int * first = new int[size];
+    int *first = new int[size];
     vector<int> second(size);
 }
 
+void fourth15() {
+    ;
+    fish *pws = new fish;
+    cout << "Insert fish type";
+    cin >> pws -> kindof;
+    //or
+    cout << (*pws).kindof;
+    //or
+    cout << pws -> kindof;
+}
+
+const int ggg{10};
+const int yyy = 10;
+void fourth17() {
+    int const sis = 10;
+    std::vector<string> first(ggg);
+    std::array<string, ggg> second;
+}
 
