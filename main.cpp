@@ -253,3 +253,15 @@ int pupilInformationFun() {
     return 0;
 }
 
+int main() {
+    string name;
+    string desert;
+
+    cout << "Enter your name:\n";
+    std::getline(cin, name);
+    cout << "Enter your favorite desert:\n";
+    std::getline(cin, desert);
+    cout << "I have some delicious " << desert;
+    cout << " for you, " << name << ".\n";
+}
+
