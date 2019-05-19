@@ -265,7 +265,7 @@ void desertExercise() {
     cout << " for you, " << name << ".\n";
 }
 
-int main() {
+int naming() {
     char *firstName1;
     char *lastName1;
 
@@ -278,6 +278,18 @@ int main() {
     cout << "Here's the information in a single string: " << lastName1 << ", " << firstName1 << endl;
     delete[] firstName1;
     delete[] lastName1;
+    return 0;
+}
+
+int main() {
+    string firstName1;
+    string lastName1;
+
+    cout << "What is your fist name? -> ";
+    std::getline(cin, firstName1);
+    cout << "What is your last name? -> ";
+    std::getline(cin, lastName1);
+    cout << "Here's the information in a single string: " << lastName1 << ", " << firstName1 << endl;
     return 0;
 }
 
