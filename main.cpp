@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <array>
+#include <vector>
 
 using namespace std;
 
@@ -204,7 +205,11 @@ void fourth12() {
 }
 
 void fourth13() {
-
+    int size;
+    cout << "Insert size ";
+    cin >> size;
+    int * first = new int[size];
+    vector<int> second(size);
 }
 
 
