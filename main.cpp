@@ -216,18 +216,40 @@ void fourth15() {
     ;
     fish *pws = new fish;
     cout << "Insert fish type";
-    cin >> pws -> kindof;
+    cin >> pws->kindof;
     //or
     cout << (*pws).kindof;
     //or
-    cout << pws -> kindof;
+    cout << pws->kindof;
 }
 
 const int ggg{10};
 const int yyy = 10;
+
 void fourth17() {
     int const sis = 10;
     std::vector<string> first(ggg);
     std::array<string, ggg> second;
+}
+
+int pupilInformationFun() {
+    string firstName;
+    string lastName;
+    char *letterGrade = new char[1];
+    int age;
+
+    cout << "What is your fist name? -> ";
+    std::getline(cin, firstName);
+    cout << "What is your last name? -> ";
+    std::getline(cin, lastName);
+    cout << "What letter grade you deserve? -> ";
+    cin.getline(letterGrade, sizeof(cin));
+    cout << "What is your age? -> ";
+    cin >> age;
+    cout << "Name: " << lastName + ", " + firstName << endl;
+    cout << "Grade: " <<(char) (letterGrade[0] + 1) << endl;
+    cout << "Age: " << age << endl;
+
+    return 0;
 }
 
