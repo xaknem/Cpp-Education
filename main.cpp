@@ -247,13 +247,13 @@ int pupilInformationFun() {
     cout << "What is your age? -> ";
     cin >> age;
     cout << "Name: " << lastName + ", " + firstName << endl;
-    cout << "Grade: " <<(char) (letterGrade[0] + 1) << endl;
+    cout << "Grade: " << (char) (letterGrade[0] + 1) << endl;
     cout << "Age: " << age << endl;
 
     return 0;
 }
 
-int main() {
+void desertExercise() {
     string name;
     string desert;
 
@@ -263,5 +263,21 @@ int main() {
     std::getline(cin, desert);
     cout << "I have some delicious " << desert;
     cout << " for you, " << name << ".\n";
+}
+
+int main() {
+    char *firstName1;
+    char *lastName1;
+
+    cout << "What is your fist name? -> ";
+    firstName1 = new char[sizeof(cin)];
+    cin.getline(firstName1, sizeof(cin));
+    cout << "What is your last name? -> ";
+    lastName1 = new char[sizeof(cin)];
+    cin.getline(lastName1, sizeof(cin));
+    cout << "Here's the information in a single string: " << lastName1 << ", " << firstName1 << endl;
+    delete[] firstName1;
+    delete[] lastName1;
+    return 0;
 }
 
